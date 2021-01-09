@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="kindSelectPane" prefHeight="499.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KindSelectController">
+   <children>
+      <ImageView fitHeight="549.0" fitWidth="707.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/StartImage.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="121.0" prefHeight="452.0" prefWidth="700.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="K" layoutX="39.0" layoutY="19.0" prefHeight="39.0" prefWidth="395.0" promptText="请输入类别名称" />
+            <Button layoutX="461.0" layoutY="19.0" mnemonicParsing="false" onAction="#find" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="查      找" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <TableView fx:id="objectsTable" layoutX="39.0" layoutY="86.0" prefHeight="305.0" prefWidth="622.0">
+              <columns>
+                <TableColumn fx:id="Num" prefWidth="113.66665267944336" text="商品编号" />
+                <TableColumn fx:id="Name" prefWidth="140.33335876464844" text="商品名称" />
+                  <TableColumn fx:id="Price" prefWidth="80.66665649414062" text="单    价" />
+                  <TableColumn fx:id="Kind" prefWidth="72.0" text="类    别" />
+                  <TableColumn fx:id="Sales" prefWidth="65.33334350585938" text="销    量" />
+                  <TableColumn fx:id="Sum" prefWidth="66.0" text="库    存" />
+                  <TableColumn fx:id="Sell" prefWidth="82.0" text="销售状态" />
+              </columns>
+            </TableView>
+            <Label layoutX="630.0" layoutY="19.0" prefHeight="39.0" prefWidth="27.0" style="-fx-background-radius: 10px;" text="🔍" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="250.0" layoutY="399.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="返    回" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <ImageView fitHeight="71.0" fitWidth="200.0" layoutX="236.0" layoutY="31.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/selectImage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

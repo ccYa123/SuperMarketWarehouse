@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="RegisterPane" prefHeight="272.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+   <children>
+      <Button layoutX="81.0" layoutY="201.0" mnemonicParsing="false" onAction="#register" prefHeight="36.0" prefWidth="227.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="立即注册" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="84.0" layoutY="48.0" text="用户名">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="83.0" layoutY="94.0" text="密    码">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="username" layoutX="155.0" layoutY="46.0" style="-fx-background-radius: 10px;" />
+      <PasswordField fx:id="password1" layoutX="155.0" layoutY="92.0" style="-fx-background-radius: 10px;" />
+      <Label layoutX="77.0" layoutY="136.0" text="确认密码">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password2" layoutX="155.0" layoutY="135.0" style="-fx-background-radius: 10px;" />
+   </children>
+</AnchorPane>

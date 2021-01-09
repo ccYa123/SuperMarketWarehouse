@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="unSellObjectsPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UnSellObjectsController">
+    <children>
+        <ImageView fitHeight="549.0" fitWidth="707.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/StartImage.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutY="121.0" prefHeight="452.0" prefWidth="700.0" style="-fx-background-color: white;">
+            <children>
+                <TableView fx:id="objectsTable" layoutY="1.0" prefHeight="380.0" prefWidth="700.0">
+                    <columns>
+                        <TableColumn fx:id="Num" prefWidth="124.0" text="商品编号" />
+                        <TableColumn fx:id="Name" prefWidth="154.66665649414062" text="商品名称" />
+                        <TableColumn fx:id="Price" prefWidth="76.0" text="单    价" />
+                        <TableColumn fx:id="Kind" prefWidth="99.0" text="类    别" />
+                        <TableColumn fx:id="Sales" prefWidth="77.33331298828125" text="销    量" />
+                        <TableColumn fx:id="Sum" prefWidth="81.0" text="库    存" />
+                        <TableColumn fx:id="Sell" prefWidth="87.33331298828125" text="销售状态" />
+                    </columns>
+                </TableView>
+                <Button layoutX="250.0" layoutY="399.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="返    回" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+            </children></Pane>
+        <ImageView fitHeight="71.0" fitWidth="200.0" layoutX="247.0" layoutY="37.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/UnsellObjectsImage.jpg" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

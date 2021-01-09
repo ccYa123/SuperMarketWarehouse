@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loginPane" prefHeight="306.0" prefWidth="407.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Button layoutX="98.0" layoutY="207.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="211.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="登   录" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="89.0" layoutY="70.0" text="用户名">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="90.0" layoutY="123.0" text="密   码">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button layoutX="329.0" layoutY="268.0" mnemonicParsing="false" onAction="#register" opacity="0.78" style="-fx-background-color: white;" text="注册账号" />
+      <TextField fx:id="username" layoutX="141.0" layoutY="68.0" style="-fx-background-radius: 10px;" />
+      <PasswordField fx:id="password" layoutX="141.0" layoutY="121.0" style="-fx-background-radius: 10px;" />
+   </children>
+</AnchorPane>

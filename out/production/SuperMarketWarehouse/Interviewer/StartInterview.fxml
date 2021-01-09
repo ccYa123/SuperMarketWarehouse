@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="StartPane" prefHeight="367.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartController">
+   <children>
+      <ImageView fitHeight="396.0" fitWidth="573.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/StartImage.jpg" />
+         </image></ImageView>
+      <Button layoutX="144.0" layoutY="293.0" mnemonicParsing="false" onAction="#enter" prefHeight="54.0" prefWidth="265.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="进入仓库" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

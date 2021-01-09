@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ensurePane" prefHeight="304.0" prefWidth="455.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EnsureController">
+   <children>
+      <Label layoutX="40.0" layoutY="33.0" text="商品编号">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="102.0" text="商品名称">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="165.0" text="商品单价">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="num" layoutX="121.0" layoutY="32.0" prefHeight="23.0" prefWidth="328.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="name" layoutX="121.0" layoutY="101.0" prefHeight="23.0" prefWidth="328.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="price" layoutX="121.0" layoutY="164.0" prefHeight="23.0" prefWidth="328.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="136.0" layoutY="233.0" mnemonicParsing="false" onAction="#ensure" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="确   定" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="401.0" layoutY="273.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: white;" text="取消" />
+   </children>
+</AnchorPane>

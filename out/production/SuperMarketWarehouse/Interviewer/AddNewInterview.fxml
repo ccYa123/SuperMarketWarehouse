@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="addPane" prefHeight="281.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddNewController">
+   <children>
+      <ImageView fitHeight="455.0" fitWidth="603.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/StartImage.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="93.0" prefHeight="339.0" prefWidth="603.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="115.0" layoutY="31.0" prefHeight="27.0" prefWidth="62.0" text="商品编号">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="31.0" prefHeight="27.0" prefWidth="62.0" text="商品名称">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="31.0" prefHeight="27.0" prefWidth="62.0" text="销售单价">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="143.0" prefHeight="27.0" prefWidth="62.0" text="商品种类">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="143.0" prefHeight="27.0" prefWidth="62.0" text="进 货 量">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="143.0" prefHeight="27.0" prefWidth="62.0" text="销售状态">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="num" layoutX="103.0" layoutY="89.0" prefHeight="23.0" prefWidth="87.0" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="name" layoutX="228.0" layoutY="89.0" prefHeight="23.0" prefWidth="140.0" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="price" layoutX="405.0" layoutY="89.0" prefHeight="23.0" prefWidth="87.0" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="kind" layoutX="103.0" layoutY="202.0" prefHeight="23.0" prefWidth="87.0" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="sum" layoutX="228.0" layoutY="202.0" prefHeight="23.0" prefWidth="140.0" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="sell" layoutX="405.0" layoutY="202.0" prefHeight="23.0" prefWidth="87.0" style="-fx-background-radius: 10px;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Button layoutX="190.0" layoutY="257.0" mnemonicParsing="false" onAction="#addOperate" prefHeight="45.0" prefWidth="218.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="添     加" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Button layoutX="549.0" layoutY="302.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: white; -fx-background-radius: 10px;" text="返回" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="52.0" fitWidth="208.0" layoutX="223.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/addImage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

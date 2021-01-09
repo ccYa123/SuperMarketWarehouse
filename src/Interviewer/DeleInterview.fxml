@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="deletePane" prefHeight="244.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DeleController">
+   <children>
+      <Label layoutX="58.0" layoutY="19.0" text="商品编号">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="18.0" prefHeight="29.0" prefWidth="80.0" text="商品名称">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Num" layoutX="58.0" layoutY="76.0" prefHeight="27.0" prefWidth="80.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Name" layoutX="187.0" layoutY="76.0" prefHeight="27.0" prefWidth="394.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="226.0" layoutY="171.0" mnemonicParsing="false" onAction="#delete" prefHeight="38.0" prefWidth="148.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="确认删除" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="424.0" layoutY="178.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #00BFFF; -fx-background-radius: 10px;" text="取消" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="446.0" prefWidth="594.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <children>
+      <ImageView fitHeight="458.0" fitWidth="641.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/StartImage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="432.0" layoutX="104.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mainImage.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="1.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="菜单">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#seeAll" text="查看所有商品" />
+                  <Menu mnemonicParsing="false" text="查找商品">
+                     <items>
+                      <MenuItem mnemonicParsing="false" onAction="#kindSelect" text="按类别查找" />
+                        <MenuItem mnemonicParsing="false" onAction="#sellObjects" text="上架商品" />
+                        <MenuItem mnemonicParsing="false" onAction="#unsellObjects" text="下架商品" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="进货">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addNew" text="新增商品" />
+                      <MenuItem mnemonicParsing="false" onAction="#addExist" text="已有商品" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#outGoods" text="出货" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="退出">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="退出仓库管理系统" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
