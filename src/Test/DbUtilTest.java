@@ -10,7 +10,6 @@ class DbUtilTest {
 
     @org.junit.jupiter.api.Test
     void addObjects() {
-
     }
 
     @org.junit.jupiter.api.Test
