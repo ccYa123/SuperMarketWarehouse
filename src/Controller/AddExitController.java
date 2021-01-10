@@ -44,6 +44,8 @@ public class AddExitController {
             fw.flush();
             EnsureStage ensureStage = new EnsureStage();
             ensureStage.start(new Stage());
+            Num.setText("");
+            Amount.setText("");
         }else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.titleProperty().set("提示！");
